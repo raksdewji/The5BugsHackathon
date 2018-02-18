@@ -111,9 +111,9 @@ void disarmPrint() {
   Serial.println("Sending disarmed SMS...");
   char szMotionOffMessage[64] = "Motion disarmed."; //sets the message to be sent through sms
   sendMessage(szMotionOffMessage);  //sends the sms text to the original number
-  numberChanger("16044010082"); //calls the number changer function to change the phone number to this new number
+  numberChanger("14034644043"); //calls the number changer function to change the phone number to this new number
   sendMessage(szMotionOffMessage);  //sends the sms text to the new number
-  numberChanger("14038001118"); //calls the number changer function to change the phone number back to the number
+  numberChanger("14034644043"); //calls the number changer function to change the phone number back to the number
   setMotionSMS = -1;
 }
 
@@ -121,7 +121,7 @@ void armPrint() {
   Serial.println("Sending ARMED SMS...");
   char szMotionOnMessage[64] = "Motion ARMED!"; //sets the message to be sent through sms
   sendMessage(szMotionOnMessage);  //sends the sms text to the original number
-  numberChanger("16044010082"); //calls the number changer function to change the phone number to this new number
+  numberChanger("14034644043"); //calls the number changer function to change the phone number to this new number
   sendMessage(szMotionOnMessage);  //sends the sms text to the new number
   numberChanger("14038001118"); //calls the number changer function to change the phone number back to the number
   setMotionSMS = -1;
