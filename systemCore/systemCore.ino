@@ -113,7 +113,7 @@ void disarmPrint() {
   sendMessage(szMotionOffMessage);  //sends the sms text to the original number
   numberChanger("14034644043"); //calls the number changer function to change the phone number to this new number
   sendMessage(szMotionOffMessage);  //sends the sms text to the new number
-  numberChanger("14034644043"); //calls the number changer function to change the phone number back to the number
+  numberChanger("14038001118"); //calls the number changer function to change the phone number back to the number
   setMotionSMS = -1;
 }
 
